@@ -7,7 +7,7 @@ Template Name: TSD Sharepoint
 /*===========================
 Fonts
 =============================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Open+Sans|Poppins:400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Open+Sans');
 
 /*===========================
 Base CSS
@@ -19,7 +19,7 @@ body {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #838383;
     line-height: 1.7;
 }
@@ -76,5 +76,59 @@ Background Images
 
 
 /*===========================
-Hamburger Menu CSS
+Style CSS
 =============================*/
+.single-box {
+    text-align:  center;
+    background-color: #41B6E6;
+    color: #fff;
+    font-size: 16px;
+    min-height: 140px;
+    display:  table;
+    width: 100%;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.single-box a {
+    color:  #fff;
+}
+
+.single-box a {
+    display:  table-cell;
+    vertical-align: middle;
+}
+
+.sub-box {
+    display: table;
+    width: 23%;
+    text-align: center;
+    background-color: #E3E4E5;
+    margin:  1%;
+    min-height: 80px;
+    float: left;
+}
+
+.sub-box a {
+    color: #000;
+    font-size: 13px;
+}
+.header {
+    padding:  15px 0px;
+    box-shadow: 0px 3px 20px #ddd;
+    margin-bottom: 20px;
+}
+.side-box {
+    width:  100%;
+    background-color:  #E2E3E4;
+    min-height: 80px;
+    text-align:  center;
+    font-weight: 500;
+    display: table;
+}
+
+.side-box a {
+    color:  #333;
+    display: table-cell;
+    vertical-align: middle;
+}
