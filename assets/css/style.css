@@ -3,7 +3,6 @@ Template Name: TSD Sharepoint
 =============================*/
 
 
-
 /*===========================
 Fonts
 =============================*/
@@ -73,7 +72,9 @@ Padding, Margin
 /*===========================
 Background Images
 =============================*/
-
+.slide-img-1{background-image: url(../img/slide-1.jpg);}
+.slide-img-2{background-image: url(../img/slide-2.jpg);}
+.slide-img-3{background-image: url(../img/slide-3.jpg);}
 
 /*===========================
 Style CSS
@@ -120,11 +121,12 @@ Style CSS
 }
 .side-box {
     width:  100%;
-    background-color:  #E2E3E4;
+    background-color: #B3E2F5;
     min-height: 80px;
     text-align:  center;
     font-weight: 500;
     display: table;
+    margin-bottom: 15px;
 }
 
 .side-box a {
@@ -132,3 +134,55 @@ Style CSS
     display: table-cell;
     vertical-align: middle;
 }
+
+.side-box a.red {
+    color:  #d32f2f;
+}
+
+
+.dropdown ul {
+    list-style:  none;
+    padding:  0;
+    margin:  0;
+    position:  absolute;
+    left:  0;
+    top: 120px;
+    background: transparent;
+    width:  100%;
+    z-index: -1;
+    visibility:  hidden;
+    transition: 0.3s;
+    opacity: 0;
+    padding-top: 5px;
+}
+
+.dropdown ul li a {
+    display:  block;
+    text-align: left;
+    padding: 16px 10px;
+    border-bottom: 1px solid #333;
+    background-color:  #ACD4FE;
+    transition: 0.3s;
+}
+
+.dropdown ul li a:hover {background-color: #333;color: #fff;}
+
+.dropdown:hover ul {
+    visibility:  visible;
+    z-index:  9;
+    top: 80px;
+    opacity: 1;
+}
+
+.side-box.top {
+    background-color: #E2E3E4;
+}
+.dropdown:hover ul li ul {margin-left: 140%;top:  0px;opacity:  0;}
+
+.dropdown:hover ul li:hover ul {
+    margin-left: 100%;
+    opacity: 1;
+}
+
+.dropdown:hover ul li ul li
+ a {background-color: #FFC000;padding: 8px;}
